@@ -84,7 +84,7 @@ export default function Calendar() {
   };
 
   return (
-    <div className="max-w-md mx-auto lg:p-4 md:p-2 sm:p-3 p-3 shadow-md rounded-2xl bg-white">
+    <div className="max-w-md mx-auto lg:p-4 md:p-2 sm:p-3 p-4 shadow-md rounded-2xl bg-white">
       {header()}
       {daysOfWeek()}
       {cells()}

@@ -6,7 +6,7 @@ const LeftSidebar = () => {
   return (
     <>
       {/* Logo */}
-      <div className="flex justify-between flex-col lg:w-[25%] hidden lg:flex">
+      <div className="flex flex-col lg:w-[25%] hidden lg:flex py-4 h-screen sticky top-0 overflow-y-auto leftsb">
         <div className="flex flex-row items-center gap-3">
           <img
             className="w-12 h-12 object-cover rounded-full"

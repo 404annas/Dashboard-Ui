@@ -50,13 +50,9 @@ const SideDrawer = ({ isOpen, onClose }) => {
       </div>
 
       <div className="px-6">
-        <div className="bg-gray-300 p-4 rounded-3xl w-fit overflow-hidden object-fit">
+        <div className="bg-gray-300 p-4 rounded-3xl w-full overflow-hidden object-fit">
           <h1 className="font-bold text-lg text-gray-600">Go PRO</h1>
-          <p className="text-sm text-gray-600">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
-            praesentium?
-          </p>
-          <button className="bg-yellow-500 my-2 px-4 py-1 text-black rounded-xl">
+          <button className="bg-yellow-500 my-4 px-4 py-1 text-black rounded-xl">
             Subscribe Now
           </button>
           <img

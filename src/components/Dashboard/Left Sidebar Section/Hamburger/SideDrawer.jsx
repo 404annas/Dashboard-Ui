@@ -5,7 +5,7 @@ import {
   IoCubeOutline,
   IoSettingsOutline,
 } from "react-icons/io5";
-import { BsCalendar2Date, BsChatSquareDots } from "react-icons/bs";
+import { BsChatSquareDots } from "react-icons/bs";
 
 const SideDrawer = ({ isOpen, onClose }) => {
   // Prevent background scrolling when the SideDrawer is open.
@@ -43,7 +43,7 @@ const SideDrawer = ({ isOpen, onClose }) => {
         </div>
 
         {/* Scrollable Main Content */}
-        <div className="flex-1 px-6 py-6">
+        <div className="flex-1 px-6 py-6 bg-purple-100">
           <div className="flex flex-col gap-5 text-yellow-500">
             <div className="flex items-center border-l-2 border-yellow-500 px-2 cursor-pointer">
               <IoHomeOutline />

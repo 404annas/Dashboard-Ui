@@ -114,7 +114,7 @@ const Dashbaord = () => {
             </div>
 
             {/* Team Chat Box */}
-            <div className="lg:h-80 md:h-[350px] sm:h-72 h-72 overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
+            <div className="lg:h-64 md:h-[350px] sm:h-72 h-72 overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
               <TeamChat />
             </div>
           </div>

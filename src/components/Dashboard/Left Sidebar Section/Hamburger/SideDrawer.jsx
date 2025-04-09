@@ -1,6 +1,10 @@
 import React from "react";
 import { X } from "lucide-react";
-import { IoHomeOutline, IoCubeOutline, IoSettingsOutline } from "react-icons/io5";
+import {
+  IoHomeOutline,
+  IoCubeOutline,
+  IoSettingsOutline,
+} from "react-icons/io5";
 import { BsCalendar2Date, BsChatSquareDots } from "react-icons/bs";
 
 const SideDrawer = ({ isOpen, onClose }) => {
@@ -45,7 +49,24 @@ const SideDrawer = ({ isOpen, onClose }) => {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-6 text-sm text-gray-500">
+      <div className="px-6">
+        <div className="bg-gray-300 p-4 rounded-3xl w-fit overflow-hidden object-fit">
+          <h1 className="font-bold text-lg text-gray-600">Go PRO</h1>
+          <p className="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
+            praesentium?
+          </p>
+          <button className="bg-yellow-500 my-2 px-4 py-1 text-black rounded-xl">
+            Subscribe Now
+          </button>
+          <img
+            className="w-40 h-40 rounded-xl"
+            src="https://plus.unsplash.com/premium_vector-1682303071823-921c93af6aa2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybCUyMHNpdHRpbmclMjB3aXRoJTIwbGFwdG9wfGVufDB8fDB8fHww"
+          />
+        </div>
+      </div>
+
+      <div className="absolute bottom-2 left-6 text-sm text-gray-500">
         <div className="flex items-center gap-2 font-medium">
           <img
             className="rounded-full w-10 object-fill"

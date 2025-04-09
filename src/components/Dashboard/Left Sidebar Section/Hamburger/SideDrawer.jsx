@@ -54,10 +54,6 @@ const SideDrawer = ({ isOpen, onClose }) => {
               <p className="ml-4 font-semibold text-black">Project</p>
             </div>
             <div className="flex items-center px-2 cursor-pointer">
-              <BsCalendar2Date />
-              <p className="ml-4 font-semibold text-black">Calendar</p>
-            </div>
-            <div className="flex items-center px-2 cursor-pointer">
               <BsChatSquareDots />
               <p className="ml-4 font-semibold text-black">Chat</p>
             </div>

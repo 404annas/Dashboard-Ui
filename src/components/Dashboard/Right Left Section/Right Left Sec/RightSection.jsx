@@ -1,7 +1,7 @@
 import React from "react";
-import WelcomeUser from "../Logged User/WelcomeUser";
-import Calendar from "../Calender/Calender";
-import AllTasks from "../Tasks/AllTasks";
+import { WelcomeUser } from "../../../Dashboard";
+import { Calender } from "../../../Dashboard";
+import { AllTasks } from "../../../Dashboard";
 
 const RightSection = () => {
   return (
@@ -10,7 +10,7 @@ const RightSection = () => {
       <div className="flex flex-col md:w-1/2">
         <WelcomeUser />
         <div className="my-2">
-          <Calendar />
+          <Calender />
         </div>
         <AllTasks />
       </div>

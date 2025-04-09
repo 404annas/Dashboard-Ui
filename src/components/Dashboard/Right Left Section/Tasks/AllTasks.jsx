@@ -5,11 +5,11 @@ import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 
 const AllTasks = () => {
   return (
-    <div className="gap-4 overflow-y-auto taskbox">
+    <div className="gap-4 md:h-64 sm:h-56 h-52 overflow-y-auto taskbox">
       <div className="flex justify-between items-center">
         <h1 className="lg:text-xl md:text-lg font-bold">Today Task</h1>
         <p className="font-bold text-sm bg-gray-300 px-2 py-1 rounded text-gray-700">
-          5
+          4
         </p>
         <p className="bg-gray-300 p-2 rounded-full cursor-pointer">
           <IoMdAdd />

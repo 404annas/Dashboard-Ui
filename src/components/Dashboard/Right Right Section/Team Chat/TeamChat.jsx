@@ -37,7 +37,7 @@ const TeamChat = () => {
         </h1>
       </div>
 
-      <div className="flex items-center gap-2 xl:mt-16 lg:mt-28 md:mt-40 bg-white px-4 py-4">
+      <div className="flex items-center gap-2 2xl:mt-16 xl:mt-12 lg:mt-28 md:mt-40 sm:mt-36 mt-20 bg-white px-4 py-4">
         <p className="cursor-pointer lg:text-base md:text-sm text-xs">
           <FaFile />
         </p>

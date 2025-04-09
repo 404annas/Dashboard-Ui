@@ -6,14 +6,13 @@ import { BsChatSquareDots } from "react-icons/bs";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 import { PhoneCallIcon } from "lucide-react";
-import Calendar from "./Dashboard/Right Left Section/Calender/Calender";
-import LeftSidebar from "./Dashboard/Left Sidebar Section/Left Sidebar/LeftSidebar";
-import WelcomeUser from "./Dashboard/Right Left Section/Logged User/WelcomeUser";
-import AllTasks from "./Dashboard/Right Left Section/Tasks/AllTasks";
-import TeamChat from "./Dashboard/Right Right Section/Team Chat/TeamChat";
-import Team from "./Dashboard/Right Right Section/Team Members/Team";
-import Notifications from "./Dashboard/Right Right Section/Notifications/Notifications";
-// import Calendar from "react-calendar";
+import { Calender } from "./Dashboard";
+import { LeftSidebar } from "./Dashboard";
+import { WelcomeUser } from "./Dashboard";
+import { AllTasks } from "./Dashboard";
+import { TeamChat } from "./Dashboard";
+import { Team } from "./Dashboard";
+import { Notifications } from "./Dashboard";
 
 const Dashbaord = () => {
   return (
@@ -56,7 +55,7 @@ const Dashbaord = () => {
       </div>
 
       {/* Right Section */}
-      <div className="bg-white rounded-3xl p-4 lg:w-[75%] md:w-[92%] w-[100%] gap-4 rightsec overflow-y-auto mt-16">
+      <div className="bg-white rounded-3xl p-4 lg:w-[75%] md:w-[92%] w-[100%] gap-4 rightsec mt-16">
         <WelcomeUser />
         {/* Right - Left Section */}
 
@@ -93,7 +92,7 @@ const Dashbaord = () => {
 
             {/* Calender Component */}
             <div className="md:my-4 sm:my-8 my-6">
-              <Calendar />
+              <Calender />
             </div>
 
             {/* Tasks Component */}
@@ -115,7 +114,7 @@ const Dashbaord = () => {
             </div>
 
             {/* Team Chat Box */}
-            <div className="h-full overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
+            <div className="lg:h-80 md:h-[350px] sm:h-72 h-72 overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
               <TeamChat />
             </div>
           </div>

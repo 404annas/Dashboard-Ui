@@ -1,7 +1,7 @@
 import React from "react";
-import WelcomeUser from "./WelcomeUser";
-import Calendar from "./Calender";
-import AllTasks from "./AllTasks";
+import WelcomeUser from "../Logged User/WelcomeUser";
+import Calendar from "../Calender/Calender";
+import AllTasks from "../Tasks/AllTasks";
 
 const RightSection = () => {
   return (

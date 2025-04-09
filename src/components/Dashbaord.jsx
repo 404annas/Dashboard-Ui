@@ -6,13 +6,13 @@ import { BsChatSquareDots } from "react-icons/bs";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 import { PhoneCallIcon } from "lucide-react";
-import Calendar from "./Dashboard/Right Left Section/Calender";
-import LeftSidebar from "./Dashboard/Left Sidebar Section/LeftSidebar";
-import WelcomeUser from "./Dashboard/Right Left Section/WelcomeUser";
-import AllTasks from "./Dashboard/Right Left Section/AllTasks";
-import TeamChat from "./Dashboard/Right Right Section/TeamChat";
-import Team from "./Dashboard/Right Right Section/Team";
-import Notifications from "./Dashboard/Right Right Section/Notifications";
+import Calendar from "./Dashboard/Right Left Section/Calender/Calender";
+import LeftSidebar from "./Dashboard/Left Sidebar Section/Left Sidebar/LeftSidebar";
+import WelcomeUser from "./Dashboard/Right Left Section/Logged User/WelcomeUser";
+import AllTasks from "./Dashboard/Right Left Section/Tasks/AllTasks";
+import TeamChat from "./Dashboard/Right Right Section/Team Chat/TeamChat";
+import Team from "./Dashboard/Right Right Section/Team Members/Team";
+import Notifications from "./Dashboard/Right Right Section/Notifications/Notifications";
 // import Calendar from "react-calendar";
 
 const Dashbaord = () => {

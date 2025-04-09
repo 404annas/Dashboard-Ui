@@ -1,6 +1,6 @@
 import React from "react";
-import LeftSidebarBox from "./LeftSidebarBox";
-import LeftSidebarMenus from "./LeftSidebarMenus";
+import LeftSidebarBox from "../Left Box/LeftSidebarBox";
+import LeftSidebarMenus from "../Menus/LeftSidebarMenus";
 
 const LeftSidebar = () => {
   return (

@@ -10,7 +10,7 @@ const Notifications = () => {
           View All
         </p>
       </div>
-      <div className="lg:px-4 lg:py-4 md:p-2 bg-purple-950 rounded-2xl flex gap-6">
+      <div className="lg:px-4 lg:py-4 md:p-4 bg-purple-950 rounded-3xl flex gap-6">
         <p className="text-xl text-white cursor-pointer px-2">
           <FaRegEdit />
         </p>

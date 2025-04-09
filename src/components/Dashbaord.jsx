@@ -56,65 +56,68 @@ const Dashbaord = () => {
       </div>
 
       {/* Right Section */}
-      <div className="bg-white rounded-3xl p-4 lg:w-[75%] md:w-[92%] w-[100%] md:flex gap-4">
+      <div className="bg-white rounded-3xl p-4 lg:w-[75%] md:w-[92%] w-[100%] gap-4 rightsec overflow-y-auto mt-16">
+        <WelcomeUser />
         {/* Right - Left Section */}
-        <div className="flex flex-col md:w-1/2">
-          {/* User */}
-          <WelcomeUser />
 
-          <div className="mt-8 sm:hidden block">
-            <div className="flex justify-between items-center">
-              <h1 className="font-bold lg:text-xl md:text-lg mb-2">
-                Notifications
-              </h1>
-              <p className="lg:text-sm md:text-xs text-xs text-yellow-500 cursor-pointer">
-                View All
-              </p>
-            </div>
-            <div className="lg:px-4 lg:py-4 md:p-2 p-4 bg-purple-950 rounded-2xl flex gap-6">
-              <p className="text-xl text-white cursor-pointer px-2">
-                <FaRegEdit />
-              </p>
-              <div className="text-white">
-                <h1 className="font-medium lg:text-base md:text-sm text-base">
-                  Emily just sent you a task
+        <div className="flex md:flex-row flex-col gap-4">
+          <div className="flex flex-col md:w-1/2">
+            {/* User */}
+
+            <div className="mt-2 sm:mt-6 sm:hidden block">
+              <div className="flex justify-between items-center">
+                <h1 className="font-bold lg:text-xl md:text-lg mb-2">
+                  Notifications
                 </h1>
-                <p className="lg:text-xs md:text-[10px] text-xs mb-2">
-                  Lorem ipsum dolor sit amet.
+                <p className="lg:text-sm md:text-xs text-xs text-yellow-500 cursor-pointer">
+                  View All
                 </p>
-                <button className="bg-yellow-500 lg:text-sm md:text-xs text-xs py-1 px-2 rounded-lg">
-                  Reply Now
-                </button>
+              </div>
+              <div className="lg:px-4 lg:py-4 md:p-2 p-4 bg-purple-950 rounded-2xl flex gap-6">
+                <p className="text-xl text-white cursor-pointer px-2">
+                  <FaRegEdit />
+                </p>
+                <div className="text-white">
+                  <h1 className="font-medium lg:text-base md:text-sm text-base">
+                    Emily just sent you a task
+                  </h1>
+                  <p className="lg:text-xs md:text-[10px] text-xs mb-2">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <button className="bg-yellow-500 lg:text-sm md:text-xs text-xs py-1 px-2 rounded-lg">
+                    Reply Now
+                  </button>
+                </div>
               </div>
             </div>
+
+            {/* Calender Component */}
+            <div className="md:my-4 sm:my-8 my-6">
+              <Calendar />
+            </div>
+
+            {/* Tasks Component */}
+            <AllTasks />
           </div>
 
-          {/* Calender Component */}
-          <div className="md:my-4 sm:my-8 my-6">
-            <Calendar />
-          </div>
+          {/* Right - Right Section */}
+          <div className="md:w-1/2 flex flex-col">
+            {/* User Details */}
 
-          {/* Tasks Component */}
-          <AllTasks />
-        </div>
+            {/* Notifications Box */}
+            <div className="md:block hidden">
+              <Notifications />
+            </div>
 
-        {/* Right - Right Section */}
-        <div className="md:w-1/2 flex flex-col">
-          {/* User Details */}
+            {/* Our Team*/}
+            <div className="sm:my-4 my-4 flex items-center justify-between">
+              <Team />
+            </div>
 
-          {/* Notifications Box */}
-          <div className="mt-4 md:block hidden">
-            <Notifications />
-          </div>
-
-          {/* Our Team*/}
-          <div className="sm:my-4 my-6 flex items-center justify-between">
-            <Team />
-          </div>
-
-          {/* Team Chat Box */}
-          <div className="h-full overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
-            <TeamChat />
+            {/* Team Chat Box */}
+            <div className="h-full overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
+              <TeamChat />
+            </div>
           </div>
         </div>
       </div>

@@ -8,4 +8,9 @@
 
 .taskbox::-webkit-scrollbar {
     display: none;
+
+}
+
+.rightsec::-webkit-scrollbar {
+    display: none;
 }

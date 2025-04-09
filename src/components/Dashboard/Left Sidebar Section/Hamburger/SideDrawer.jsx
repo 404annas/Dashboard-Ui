@@ -52,7 +52,7 @@ const SideDrawer = ({ isOpen, onClose }) => {
       <div className="px-6">
         <div className="bg-gray-300 p-4 rounded-3xl w-full overflow-hidden object-fit">
           <h1 className="font-bold text-lg text-gray-600">Go PRO</h1>
-          <button className="bg-yellow-500 my-4 px-4 py-1 text-black rounded-xl">
+          <button className="bg-yellow-500 my-2 px-4 py-1 text-black rounded-xl">
             Subscribe Now
           </button>
           <img

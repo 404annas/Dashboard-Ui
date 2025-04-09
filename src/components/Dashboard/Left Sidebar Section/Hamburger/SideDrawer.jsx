@@ -43,7 +43,7 @@ const SideDrawer = ({ isOpen, onClose }) => {
         </div>
 
         {/* Scrollable Main Content */}
-        <div className="flex-1 px-6 py-6 bg-purple-100">
+        <div className="flex-1 px-6 py-6 bg-gray-700">
           <div className="flex flex-col gap-5 text-yellow-500">
             <div className="flex items-center border-l-2 border-yellow-500 px-2 cursor-pointer">
               <IoHomeOutline />
@@ -51,15 +51,15 @@ const SideDrawer = ({ isOpen, onClose }) => {
             </div>
             <div className="flex items-center px-2 cursor-pointer">
               <IoCubeOutline />
-              <p className="ml-4 font-semibold text-black">Project</p>
+              <p className="ml-4 font-semibold text-white">Project</p>
             </div>
             <div className="flex items-center px-2 cursor-pointer">
               <BsChatSquareDots />
-              <p className="ml-4 font-semibold text-black">Chat</p>
+              <p className="ml-4 font-semibold text-white">Chat</p>
             </div>
             <div className="flex items-center px-2 cursor-pointer">
               <IoSettingsOutline />
-              <p className="ml-4 font-semibold text-black">Settings</p>
+              <p className="ml-4 font-semibold text-white">Settings</p>
             </div>
           </div>
 

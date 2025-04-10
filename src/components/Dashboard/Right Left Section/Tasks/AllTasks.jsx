@@ -1,7 +1,6 @@
 import React from "react";
 import { IoMdAdd } from "react-icons/io";
-import { MdOutlineCheckBox } from "react-icons/md";
-import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
+import { tasks } from "./tasks";
 
 const AllTasks = () => {
   return (
@@ -17,50 +16,17 @@ const AllTasks = () => {
       </div>
 
       <div className="mt-4 bg-gray-200 px-4 py-2 rounded-xl">
-        <div className="flex items-center sm:justify-between my-2 overflow-y-auto">
-          <p className="cursor-pointer">
-            <MdOutlineCheckBox />
-          </p>
-          <p className="text-start lg:text-base md:text-sm ml-10">
-            Working on Project
-          </p>
-          <p className="text-purple-950 lg:text-base md:text-sm sm:block hidden">
-            04/04/2025 | Fri
-          </p>
-        </div>
-        <div className="flex items-center sm:justify-between my-2">
-          <p className="cursor-pointer">
-            <MdOutlineCheckBoxOutlineBlank />
-          </p>
-          <p className="text-start lg:text-base md:text-sm ml-10">
-            Team Meeting
-          </p>
-          <p className="text-purple-950 lg:text-base md:text-sm sm:block hidden">
-            15/05/2025 | Wed
-          </p>
-        </div>
-        <div className="flex items-center sm:justify-between my-2">
-          <p className="cursor-pointer">
-            <MdOutlineCheckBoxOutlineBlank />
-          </p>
-          <p className="text-start lg:text-base md:text-sm ml-10">
-            Doing Research
-          </p>
-          <p className="text-purple-950 lg:text-base md:text-sm sm:block hidden">
-            25/07/2024 | Mon
-          </p>
-        </div>
-        <div className="flex items-center sm:justify-between my-2">
-          <p className="cursor-pointer">
-            <MdOutlineCheckBoxOutlineBlank />
-          </p>
-          <p className="text-start lg:text-base md:text-sm ml-10">
-            Researching Projects
-          </p>
-          <p className="text-purple-950 lg:text-base md:text-sm sm:block hidden">
-            15/05/2024 | Tue
-          </p>
-        </div>
+        {tasks.map((task, idx) => (
+          <div key={idx} className="flex items-center sm:justify-between my-2">
+            <p className="cursor-pointer">{task.icon}</p>
+            <p className="text-start lg:text-base md:text-sm ml-10">
+              {task.content}
+            </p>
+            <p className="text-purple-950 lg:text-base md:text-sm sm:block hidden">
+              {task.date}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

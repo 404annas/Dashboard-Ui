@@ -1,8 +1,6 @@
 import React from "react";
 import { IoHomeOutline } from "react-icons/io5";
-import { IoCubeOutline } from "react-icons/io5";
-import { BsChatSquareDots } from "react-icons/bs";
-import { IoSettingsOutline } from "react-icons/io5";
+import { menuData } from "./menuData";
 
 const LeftSidebarMenus = () => {
   return (
@@ -19,18 +17,12 @@ const LeftSidebarMenus = () => {
         <IoHomeOutline />
         <p className="ml-4 font-semibold">Home</p>
       </div>
-      <div className="flex items-center px-2 my-4 cursor-pointer">
-        <IoCubeOutline />
-        <p className="ml-4 font-semibold text-white">Project</p>
-      </div>
-      <div className="flex items-center px-2 my-4 cursor-pointer">
-        <BsChatSquareDots />
-        <p className="ml-4 font-semibold text-white">Chat</p>
-      </div>
-      <div className="flex items-center px-2 my-4 cursor-pointer">
-        <IoSettingsOutline />
-        <p className="ml-4 font-semibold text-white">Settings</p>
-      </div>
+      {menuData.map((data, idx) => (
+        <div key={idx} className="flex items-center px-2 my-4 cursor-pointer">
+          {data?.icon}
+          <p className="ml-4 font-semibold text-white">{data.content}</p>
+        </div>
+      ))}
     </div>
   );
 };

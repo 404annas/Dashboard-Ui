@@ -40,7 +40,6 @@ const Dashbaord = () => {
 
               {/* Tasks Component */}
               <AllTasks />
-              {/* <AllTasks /> */}
             </div>
 
             {/* Right - Right Section */}
@@ -61,12 +60,6 @@ const Dashbaord = () => {
               <div className="lg:h-72 md:h-[350px] sm:h-72 h-72 overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
                 <TeamChat />
               </div>
-              {/* <div className="lg:h-72 md:h-[350px] sm:h-72 h-72 mt-4 overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
-                <TeamChat />
-              </div>
-              <div className="lg:h-72 md:h-[350px] sm:h-72 h-72 mt-4 overflow-y-auto bg-gray-200 rounded-lg p-4 chatbox">
-                <TeamChat />
-              </div> */}
             </div>
           </div>
         </div>
